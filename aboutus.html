@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Gold Milan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+      color: #333;
+    }
+
+    .logo-button {
+       position: absolute;
+       top: 15px;
+       left: 20px;
+       z-index: 999;
+       display: block;
+    }
+    .logo-button img {
+       height: 50px;
+       width: auto;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    .logo-button img:hover {
+        transform: scale(1.05);
+    }
+
+
+    header {
+      background-color: #111;
+      color: white;g
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 10px 20px 40px 20px;
+    }
+
+    .about-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      max-width: 850px;
+      margin: 0 auto 50px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 40px 80px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    .card-text {
+      padding: 20px;
+    }
+
+    .card-text h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #222;
+    }
+
+    .card-text p {
+      font-size: 15px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 28px;
+      }
+
+      .about-section h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Gold Milan</header>
+
+  <div class="about-section">
+    <h2>About Us</h2>
+    <p>
+      At Gold Milan, we take pride in our craftsmanship and professionalism. Our mission is to deliver innovative, durable, and high-quality construction and renovation services tailored to our clients’ needs. Meet the dedicated team behind our success:
+    </p>
+    <h3 style="font-size: 26px; margin-bottom: 30px; color: #111;">Our Awesome Team</h3>
+    <a href="website.html" class="logo-button">
+         <img src="/photos/goldmilan.png" alt="Gold Milan Logo" />
+    </a>
+    <div class="team-grid">
+      <div class="card">
+        <img src="/photos/yousef.png" alt="Yousef Halaby" />
+        <div class="card-text">
+          <h3>Yousef Halaby</h3>
+          <p>Founder & CEO</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/photos/Razy.jpg" alt="Razy Halaby" />
+        <div class="card-text">
+          <h3>Razy Halaby</h3>
+          <p>Senior Engineer</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/photos/faker.jpg" alt="Faker" />
+        <div class="card-text">
+          <h3>Faker</h3>
+          <p>Project manager </p>
+        </div>
+      </div>
+    </div>
+  </div>

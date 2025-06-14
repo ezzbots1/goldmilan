@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Milan Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      border-bottom: 2px solid black;
+      padding: 10px 0;
+      gap: 40px;
+      font-weight: bold;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+
+    .nav-bar a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      border-top: 2px solid #000;
+      padding: 20px;
+    }
+
+    .project-info {
+      max-width: 100%;
+    }
+
+    .project-photos {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .project-photos img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project-photos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/photos/goldmilan.png" alt="Gold Milan Logo" />
+    <h1>Gold Milan Projects</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <a href="#info">Info</a>
+    <a href="/aboutus.html">About Us</a>
+    <a href="/location.html">Location</a>
+  </nav>
+
+  <!-- Project 1 -->
+  <div id="info" class="project">
+    <div class="project-info">
+      <h2>Channel In Garage for JCB</h2>
+      <p>In this project our team handled everything and it went smoothly. First we dug the ground, cleaned the sand, then constructed and added steel according to the plan.<br>Here are some photos:</p>
+      <div class="project-photos">
+        <img src="/photos/channel1.jpg" alt="Project 1 Photo 1" />
+        <img src="/photos/channel2.jpg" alt="Project 1 Photo 2" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project">
+    <div class="project-info">
+      <h2>Doing a support layer diesel container</h2>
+      <p>This diesel container had an overflow before, so we renovated the whole structure and added another support layer on the outside.</p>
+      <div class="project-photos">
+        <img src="/photos/dor1.jpg" alt="Project 2 Photo 1" />
+        <video controls autoplay muted src="/photos/dor2.mp4" width="300"></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background-color: #111; color: white; padding: 20px; text-align: center;">
+    &copy; 2025 Gold Milan. All rights reserved.
+  </footer>
+</body>
+</html>
